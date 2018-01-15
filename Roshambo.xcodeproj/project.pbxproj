@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4A7946A6200C1D9300A4E56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7946A5200C1D9300A4E56F /* AppDelegate.swift */; };
-		4A7946A8200C1D9300A4E56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7946A7200C1D9300A4E56F /* ViewController.swift */; };
+		4A7946A8200C1D9300A4E56F /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7946A7200C1D9300A4E56F /* StartGameViewController.swift */; };
 		4A7946AB200C1D9300A4E56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7946A9200C1D9300A4E56F /* Main.storyboard */; };
 		4A7946AD200C1D9300A4E56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7946AC200C1D9300A4E56F /* Assets.xcassets */; };
 		4A7946B0200C1D9300A4E56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7946AE200C1D9300A4E56F /* LaunchScreen.storyboard */; };
 		4A7946BB200C1D9300A4E56F /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7946BA200C1D9300A4E56F /* RoshamboTests.swift */; };
 		4A7946C6200C1D9400A4E56F /* RoshamboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7946C5200C1D9400A4E56F /* RoshamboUITests.swift */; };
+		4A7946D4200D68EA00A4E56F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7946D3200D68EA00A4E56F /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		4A7946A2200C1D9300A4E56F /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7946A5200C1D9300A4E56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A7946A7200C1D9300A4E56F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A7946A7200C1D9300A4E56F /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 		4A7946AA200C1D9300A4E56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7946AC200C1D9300A4E56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7946AF200C1D9300A4E56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		4A7946C1200C1D9400A4E56F /* RoshamboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7946C5200C1D9400A4E56F /* RoshamboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboUITests.swift; sourceTree = "<group>"; };
 		4A7946C7200C1D9400A4E56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7946D3200D68EA00A4E56F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				4A7946A5200C1D9300A4E56F /* AppDelegate.swift */,
-				4A7946A7200C1D9300A4E56F /* ViewController.swift */,
+				4A7946A7200C1D9300A4E56F /* StartGameViewController.swift */,
 				4A7946A9200C1D9300A4E56F /* Main.storyboard */,
 				4A7946AC200C1D9300A4E56F /* Assets.xcassets */,
 				4A7946AE200C1D9300A4E56F /* LaunchScreen.storyboard */,
 				4A7946B1200C1D9300A4E56F /* Info.plist */,
+				4A7946D3200D68EA00A4E56F /* ResultsViewController.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7946A8200C1D9300A4E56F /* ViewController.swift in Sources */,
+				4A7946A8200C1D9300A4E56F /* StartGameViewController.swift in Sources */,
 				4A7946A6200C1D9300A4E56F /* AppDelegate.swift in Sources */,
+				4A7946D4200D68EA00A4E56F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
