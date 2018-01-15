@@ -21,6 +21,23 @@ class StartGameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playGame(_ sender: Any, forEvent event: UIEvent) {
+        // get action button tag
+        let playerResult = 0
+        // generate other player result
+        let otherPlayerResult = generateResult()
+        var result = "lost"
+        if playerResult == otherPlayerResult {
+            result = "tie"
+        } else {
+            
+        }
+        // generate message 
+    }
+    
+    func generateResult () -> Int {
+        return Int(arc4random_uniform(_: 3))
+    }
 
 }
 

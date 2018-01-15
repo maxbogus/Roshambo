@@ -22,16 +22,25 @@
                                 <rect key="frame" x="123" y="137" width="129" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="rock"/>
+                                <connections>
+                                    <action selector="playGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kF9-Jp-7aG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-oV-9cD">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-oV-9cD">
                                 <rect key="frame" x="123" y="301" width="129" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="paper"/>
+                                <connections>
+                                    <action selector="playGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWm-1W-G0A"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP2-in-W6s">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP2-in-W6s">
                                 <rect key="frame" x="123" y="429" width="129" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="scissors"/>
+                                <connections>
+                                    <action selector="playGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmv-At-rku"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,17 +69,11 @@
                                 <rect key="frame" x="164" y="378" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play again"/>
-                                <connections>
-                                    <action selector="playAgain:" destination="7u8-z6-NNL" eventType="touchUpInside" id="dfP-Ac-25a"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b2M-jn-AAg"/>
                     </view>
-                    <connections>
-                        <outlet property="result" destination="Cgh-Z3-338" id="eUW-6H-UFi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUE-iE-aPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
