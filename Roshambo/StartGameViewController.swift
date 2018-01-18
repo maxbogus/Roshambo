@@ -9,6 +9,15 @@
 import UIKit
 
 class StartGameViewController: UIViewController {
+    @objc @IBAction func playGameByPaper() {
+        let controller: ResultsViewController
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
+        
+        // Present the view Controller
+        controller.result = playGame(handIndex: 1)
+        present(controller, animated: true, completion: nil)
+    }
+    
     @IBAction func playGameByScissor(_ sender: Any, forEvent event: UIEvent) {
         performSegue(withIdentifier: "playScissor", sender: self)
     }
@@ -18,10 +27,10 @@ class StartGameViewController: UIViewController {
             let controller = segue.destination as! ResultsViewController
             controller.result = playGame(handIndex: 0)
         }
-        if segue.identifier == "playPaper" {
-            let controller = segue.destination as! ResultsViewController
-            controller.result = playGame(handIndex: 1)
-        }
+//        if segue.identifier == "playPaper" {
+//            let controller = segue.destination as! ResultsViewController
+//            controller.result = playGame(handIndex: 1)
+//        }
         if segue.identifier == "playScissor" {
             let controller = segue.destination as! ResultsViewController
             controller.result = playGame(handIndex: 2)
