@@ -16,17 +16,11 @@ class ResultsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let result = self.result {
-            print(result)
-            label.text = result
-        } else {
-            label.text = nil
-        }
-        // Do any additional setup after loading the view, typically from a nib.
+        label.text = result
     }
     
     @IBAction func playAgain(_ sender: Any) {
         label.text = nil
-        // return to previous screen
+        self.dismiss(animated: true, completion: nil)
     }
 }
