@@ -26,7 +26,7 @@
                                     <action selector="playGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kF9-Jp-7aG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-oV-9cD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-oV-9cD">
                                 <rect key="frame" x="123" y="301" width="129" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="paper"/>
@@ -34,18 +34,23 @@
                                     <action selector="playGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWm-1W-G0A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP2-in-W6s">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP2-in-W6s">
                                 <rect key="frame" x="123" y="429" width="129" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="scissors"/>
                                 <connections>
                                     <action selector="playGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmv-At-rku"/>
+                                    <action selector="playGameByScissor:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DIV-Sd-yVn"/>
+                                    <segue destination="7u8-z6-NNL" kind="show" identifier="playPaper" id="AxY-1Q-Xke"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="7u8-z6-NNL" kind="show" identifier="playScissor" id="zA6-3U-l0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,18 +71,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSM-N3-tga">
-                                <rect key="frame" x="164" y="378" width="46" height="30"/>
+                                <rect key="frame" x="164" y="378" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="7u8-z6-NNL" eventType="touchUpInside" id="Wwz-r2-P0k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b2M-jn-AAg"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Cgh-Z3-338" id="BVF-tU-5AD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUE-iE-aPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1475.5" y="32.5"/>
+            <point key="canvasLocation" x="1285.5999999999999" y="126.38680659670166"/>
         </scene>
     </scenes>
     <resources>
@@ -85,4 +96,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zA6-3U-l0R"/>
+    </inferredMetricsTieBreakers>
 </document>

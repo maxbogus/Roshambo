@@ -9,17 +9,24 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    var result: String?
     
-    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var label: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let result = self.result {
+            print(result)
+            label.text = result
+        } else {
+            label.text = nil
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func playAgain(_ sender: Any) {
-        // if result
-        // result = nil
+        label.text = nil
         // return to previous screen
     }
 }
